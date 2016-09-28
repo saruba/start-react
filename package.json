@@ -1,5 +1,5 @@
 {
-  "name": "webpack-bootstrap",
+  "name": "bootreact",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -17,5 +17,9 @@
     "babel-preset-stage-2": "^6.13.0",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.16.1"
+  },
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
   }
 }
