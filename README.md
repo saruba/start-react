@@ -1,2 +1,2 @@
 # start-react
-Project for start with react
+Project to start with react
