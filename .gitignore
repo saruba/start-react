@@ -1,2 +1,14 @@
+# Logs:
+*.log
+logs/*
+
+# Pycharm
+.idea
+
+# Node
+node_modules/
+bower_components/
+coverage/
+
+# macOS
 .DS_Store
-node_modules

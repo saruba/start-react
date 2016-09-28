@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --watch --colors",
-    "serve": "webpack-dev-server --progress --colors"
+    "serve": "webpack-dev-server --progress --colors",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
   },
   "author": "Salva",
   "license": "MIT",
@@ -19,7 +21,22 @@
     "webpack-dev-server": "^1.16.1"
   },
   "dependencies": {
+    "jest-cli": "^15.1.1",
     "react": "^15.3.2",
     "react-dom": "^15.3.2"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/*.jsx",
+      "src/*.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 50,
+        "functions": 50,
+        "lines": 50,
+        "statements": 50
+      }
+    }
   }
 }
